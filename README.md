@@ -1,6 +1,6 @@
 # How to set up a Home VPN Server Using Raspberry Pi with Pivpn
 
-It is possible to get the benifits of Network Wide adblocking of Pihole outside of home network. In this tutorial, We will be achieving this by configuring a VPN wireguard tunnel using PiVPN.
+It is possible to get the benifits of Network Wide adblocking of Pihole outside of home network. In this tutorial, we will be achieving this by configuring a VPN wireguard tunnel using PiVPN.
 
 ***
 **Important Information**
