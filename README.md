@@ -47,14 +47,14 @@ The script will first update your APT repositories, upgrade packages, and instal
 5. Here, we will be prompted to select VPN we want to install. Select WireGuard and press the ENTER key to continue.
 6. This screen will allow you to change the port the WireGuard uses on your Raspberry Pi. Defaule wireguard port is `51820`. You can keep it the same or change it to any other port except default/reserved ports for other applications. 
 
-**Make a note of port you'll be entering here since we'll be NAT Forwarding(Opening) the same port from our router to the internet**
+*Make a note of port you'll be entering here since we'll be NAT Forwarding(Opening) the same port from our router to the internet*
 
 Press the ENTER key to confirm the specified port.
 
 7. We will be prompted to specify the DNS provider that we want to use for our VPN clients. The installer will automatically detect Pihole installed and will prompt to use it as DNS. Select Yes to confirm.
 8. The wizard will now prompt whether we want to use a Public IP or a DNS Name. Using your public IP address is the easiest option. However, this should only be used if you have a static IP address. Your public IP will be fetched by the script. Press the ENTER key to confirm.
 
-**Make sure to contact ISP and request for a static IP prior setting this VPN up**
+*Make sure to contact ISP and request for a static IP prior setting this VPN up*
 
 VPN won't work in most cases where static IP isn't assigned to you by ISP. ISPs DHCP server dynamically assigns IP address to you and that dynamically assigned internal IP is never directly exposed to the internet. Which means, you can never connect to your internal network from internet.
 
@@ -84,6 +84,7 @@ In order to successfully connect to our configured Pivpn from the internet we'll
 5. Reboot Router.
 
 **Adding Clients**
+
 1.  To begin creating a new profile for WireGuard, we need to run the following command.
 `pivpn add`
 2. You will be prompted to type a name for client. Type a name of your choice and press Enter.
