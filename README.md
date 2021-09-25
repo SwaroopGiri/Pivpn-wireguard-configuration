@@ -95,18 +95,18 @@ In order to successfully connect to our configured Pivpn from the internet we'll
 
 1. If you're unable to connect, type `pivpn -d`
 
-Check whether your pivpnHOST: <Your public IP>
+ Check whether your pivpnHOST: <Your public IP>
  
-Goto https://whatismyipaddress.com/ to validate your PublicIP.
+ Goto https://whatismyipaddress.com/ to validate your PublicIP.
 
-and pivpnDNS1: <IP address of your Pihole>
+ and pivpnDNS1: <IP address of your Pihole>
 
-If above values aren't correct, input below command to access conf file and edit values.
+ If above values aren't correct, input below command to access conf file and edit values.
  
-`sudo nano /etc/pivpn/wireguard/setupVars.conf`
+ `sudo nano /etc/pivpn/wireguard/setupVars.conf`
 
-To save, press `Ctrl+X --> Y --> Enter`
+ To save, press `Ctrl+X --> Y --> Enter`
  
 2. If you're able to access local devices from VPN but have no internet access. Make sure that you have 'Listen to All Interfaces, All Origins' enabled in your PiHole DNS settings.
 
-Happy Adblocking :)
+ Happy Adblocking :)
