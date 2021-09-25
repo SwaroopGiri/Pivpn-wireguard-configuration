@@ -100,7 +100,8 @@ In order to successfully connect to our configured Pivpn from the internet we'll
 
 **Troubleshooting**
 
-1. If you're unable to connect, type `pivpn -d`
+1. If you're facing issues with connection or unable to connect at all.
+  type `pivpn -d`
 
  Check whether your pivpnHOST: <Your public IP>
  
