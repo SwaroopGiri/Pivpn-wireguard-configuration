@@ -8,7 +8,7 @@ It is possible to get the benifits of Network Wide adblocking of Pihole outside 
 This tutorial assumes that you have a Raspberry Pi setup with Rasberry Pi OS and Pi-hole cofigured on it.
 ***
 
-##About
+###About
 -----
 
 Visit the [PiVPN](https://pivpn.io) site for more information.
@@ -67,5 +67,15 @@ In order to successfully connect to our configured Pivpn from the internet we'll
 1. Login to the Router's admin page. Typically it is 
 `192.168.0.1` or `192.168.1.1`
 
-2. Goto advanced settings and search for NAT forwarding option.
-3. 
+2. Goto advanced settings and search for NAT forwarding/Port Forwarding option.
+3. Input details as below.
+   - Name: WireguardVPN
+   - Device IP: <Static IP of your raspberrypi/IP of your pihole>
+   - External Port: 51820
+   - Internal Port: 51820
+   - Protocol: UDP
+4. Select Save/Enable.
+5. Reboot Router.
+
+**Adding Clients**
+1. 
