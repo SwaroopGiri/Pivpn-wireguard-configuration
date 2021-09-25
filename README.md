@@ -8,7 +8,7 @@ It is possible to get the benifits of Network Wide adblocking of Pihole outside 
 This tutorial assumes that you have a Raspberry Pi setup with Rasberry Pi OS and Pi-hole cofigured on it.
 ***
 
-###About
+About
 -----
 
 Visit the [PiVPN](https://pivpn.io) site for more information.
@@ -78,4 +78,23 @@ In order to successfully connect to our configured Pivpn from the internet we'll
 5. Reboot Router.
 
 **Adding Clients**
-1. 
+1.  To begin creating a new profile for WireGuard, we need to run the following command.
+`pivpn add`
+2. You will be prompted to type a name for client. Type a name of your choice and press Enter.
+3. A profile will be created and saved in default path /home/pi/configs.
+
+
+**Troubleshooting**
+
+If you're unable to connect, type `pivpn -d`
+
+Check whether your pivpnHOST=<Your public IP>
+Goto https://whatismyipaddress.com/ to validate your PublicIP.
+
+and pivpnDNS1=<IP address of your Pihole>
+
+If above values aren't correct, input below command to access conf file and edit values.
+ 
+`sudo nano /etc/pivpn/wireguard/setupVars.conf`
+
+Press Ctrl+X --> Y --> Enter
