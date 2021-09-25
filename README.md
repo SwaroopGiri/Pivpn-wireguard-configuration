@@ -103,11 +103,11 @@ In order to successfully connect to our configured Pivpn from the internet we'll
 1. If you're facing issues with connection or unable to connect at all.
   type `pivpn -d`
 
- Check whether your pivpnHOST: <Your public IP>
- 
- Goto https://whatismyipaddress.com/ to validate your PublicIP.
+check if your pivpnHOST is your public IP.
 
- and pivpnDNS1: <IP address of your Pihole>
+ Goto https://whatismyipaddress.com/ to see your PublicIP.
+
+ and make sure pivpnDNS1 is set to IP address of your Pihole.
 
  If above values aren't correct, input below command to access conf file and edit values.
  
