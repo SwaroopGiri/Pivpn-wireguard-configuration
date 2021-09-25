@@ -82,11 +82,18 @@ In order to successfully connect to our configured Pivpn from the internet we'll
 `pivpn add`
 2. You will be prompted to type a name for client. Type a name of your choice and press Enter.
 3. A profile will be created and saved in default path /home/pi/configs.
-
+4. Type 'pivpn -qr'
+5. Input serial number of your added client.
+6. A QR code will be generated on your screen.
+7. If you're using Android/IOS client, Download [Wireguard](https://www.wireguard.com/install/) application from PlayStore/App Store.
+8. Select '+' icon and select scan.
+9. Scan the displayed QR code, input name of your choice.
+10. VPN is successfully configured on your client.
+11. To check connected clients on your Pivpn, type `pivpn -c`
 
 **Troubleshooting**
 
-If you're unable to connect, type `pivpn -d`
+1. If you're unable to connect, type `pivpn -d`
 
 Check whether your pivpnHOST: <Your public IP>
  
@@ -98,4 +105,8 @@ If above values aren't correct, input below command to access conf file and edit
  
 `sudo nano /etc/pivpn/wireguard/setupVars.conf`
 
-Press Ctrl+X --> Y --> Enter
+To save, press `Ctrl+X --> Y --> Enter`
+ 
+2. If you're able to access local devices from VPN but have no internet access. Make sure that you have 'Listen to All Interfaces, All Origins' enabled in your PiHole DNS settings.
+
+Happy Adblocking :)
