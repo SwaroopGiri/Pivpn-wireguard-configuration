@@ -43,7 +43,7 @@ The script will first update your APT repositories, upgrade packages, and instal
   - IP address should be static IP of your RaspberryPi.
   - Gateway should be IP address of your router.
 3. You will be warned that you can potentially run into IP conflicts when using this method. The way around that is to use DHCP reservation in router. However, most routers should be smart enough to stop this from being a problem.
-4. you will be prompted to specify a local user to store the WireGuard configuration files. Since I haven't configured any additional users in my pi, I'll select default user.
+4. You will be prompted to specify a local user to store the WireGuard configuration files. Since I haven't configured any additional users in my pi, I'll select default user.
 5. Here, we will be prompted to select VPN we want to install. Select WireGuard and press the ENTER key to continue.
 6. This screen will allow you to change the port the WireGuard uses on your Raspberry Pi. Defaule wireguard port is `51820`. You can keep it the same or change it to any other port except default/reserved ports for other applications. 
 
@@ -111,7 +111,9 @@ check if your pivpnHOST is your public IP.
 
  If above values aren't correct, input below command to access conf file and edit values.
  
- `sudo nano /etc/pivpn/wireguard/setupVars.conf`
+ ```
+ sudo nano /etc/pivpn/wireguard/setupVars.conf
+ ```
 
  To save, press `Ctrl+X --> Y --> Enter`
  
