@@ -5,7 +5,7 @@ It is possible to get the benifits of Network Wide adblocking of Pihole outside 
 ***
 **Important Information**
 
-This tutorial assumes that you have a Raspberry Pi setup with Rasberry Pi OS and Pi-hole cofigured on it. If you don't know what it is, [hop here](https://github.com/SwaroopGiri/Pi_hole_configuration) to know how to set it up.
+This tutorial assumes that you have a Raspberry Pi setup with Rasberry Pi OS and Pi-hole configured on it. If you don't know what it is, [hop here](https://github.com/SwaroopGiri/Pi_hole_configuration) to know how to set it up.
 ***
 
 About
